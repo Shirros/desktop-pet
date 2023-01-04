@@ -41,3 +41,5 @@ This is an example of a state definition.
 "frames" is the number of frames in the gif.
 "dims" is x offset, y offset, and the width and height of the gif. (if x offset is X, it will shift the image X relative to the pet's real position).
 "move" means that each frame, the pet will move x, y pixels (this is useful for walking states).
+
+I recommend you make your own gifs because my gifs are a little janky. Your gifs should all be the same resolution or else you will get weird visual artifacts.
