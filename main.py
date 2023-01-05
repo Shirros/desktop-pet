@@ -52,7 +52,7 @@ class Pet:
         self.states = states
         self.current_state = list(states.values())[0]
         self.__current_frame = 0
-        self.x, self.y = 200, 600#983
+        self.x, self.y = 200, 983
 
     def next_frame(self):
         output = self.current_state.frames[self.__current_frame]

@@ -1,5 +1,7 @@
 # desktop-pet
 
+![demo](click.gif)
+
 Desktop pet using Python. Sprites in the assets folder are stolen from Nitrome.
 
 ## How to get sprites from Nitrome (or any Flash game)

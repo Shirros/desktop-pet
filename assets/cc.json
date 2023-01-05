@@ -39,11 +39,11 @@
         "transitions_to": [
             {
                 "name": "miner_idle",
-                "probability": 0.6
+                "probability": 0.4
             },
             {
                 "name": "miner_walk",
-                "probability": 0.2
+                "probability": 0.4
             },
             {
                 "name": "miner_irish",
@@ -59,11 +59,11 @@
         "transitions_to": [
             {
                 "name": "miner_irish",
-                "probability": 0.9
+                "probability": 0.1
             },
             {
                 "name": "miner_flip",
-                "probability": 0.0
+                "probability": 0.1
             },
             {
                 "name": "miner_tired",
@@ -113,11 +113,11 @@
             },
             {
                 "name": "miner_run",
-                "probability": 0.7
+                "probability": 0.2
             },
             {
                 "name": "miner_tired",
-                "probability": 0.3
+                "probability": 0.1
             }
         ]
     },
@@ -130,11 +130,11 @@
         "transitions_to": [
             {
                 "name": "miner_walk",
-                "probability": 0.5
+                "probability": 0.3
             },
             {
                 "name": "miner_run",
-                "probability": 0.5
+                "probability": 0.7
             }
         ]
     },
@@ -170,7 +170,7 @@
         "file_name": "mutant_big_puke.gif",
         "transitions_to": [
             {
-                "name": "miner_sleeping",
+                "name": "mutant_small_puke",
                 "probability": 1
             }
         ]
