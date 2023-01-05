@@ -1,0 +1,105 @@
+[
+    {
+        "state_name": "swing_in",
+        "frames": 25,
+        "dims": [0, 0, 200, 160],
+        "file_name": "swing_in.gif",
+        "transitions_to": [
+            {
+                "name": "idle",
+                "probability": 1
+            }
+        ]
+    },
+
+    {
+        "state_name": "idle",
+        "frames": 6,
+        "dims": [0, 0, 200, 160],
+        "file_name": "idle.gif",
+        "transitions_to": [
+            {
+                "name": "idle",
+                "probability": 0.9
+            },
+            {
+                "name": "blow_kiss",
+                "probability": 0.01
+            },
+            {
+                "name": "flip",
+                "probability": 0.01
+            },
+            {
+                "name": "wave",
+                "probability": 0.01
+            },
+            {
+                "name": "sit_down",
+                "probability": 0.01
+            }
+        ]
+    },
+
+    {
+        "state_name": "blow_kiss",
+        "frames": 17,
+        "dims": [0, 0, 200, 160],
+        "file_name": "blow_kiss.gif",
+        "transitions_to": [
+            {
+                "name": "idle",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "state_name": "wave",
+        "frames": 23,
+        "dims": [0, 0, 200, 160],
+        "file_name": "wave.gif",
+        "transitions_to": [
+            {
+                "name": "idle",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "state_name": "flip",
+        "frames": 14,
+        "dims": [0, 0, 200, 160],
+        "file_name": "flip.gif",
+        "transitions_to": [
+            {
+                "name": "idle",
+                "probability": 1
+            }
+        ]
+    },
+
+    {
+        "state_name": "sit_down",
+        "frames": 15,
+        "dims": [0, 0, 200, 160],
+        "file_name": "sit_down.gif",
+        "transitions_to": [
+            {
+                "name": "sit_up",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "state_name": "sit_up",
+        "frames": 13,
+        "dims": [0, 0, 200, 160],
+        "file_name": "sit_up.gif",
+        "transitions_to": [
+            {
+                "name": "idle",
+                "probability": 1
+            }
+        ]
+    }
+]

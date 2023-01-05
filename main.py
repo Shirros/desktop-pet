@@ -7,8 +7,8 @@ import time
 
 offline = True
 # If not offline, it expects a HTTP URL
-JSON_URL = "assets\\cc.json"
-IMPATH = "assets\\"
+JSON_URL = "assets\\bonzi\\bonzi.json"
+IMPATH = "assets\\bonzi\\"
 
 def normalize(list):
     mag = sum(list)
@@ -52,7 +52,7 @@ class Pet:
         self.states = states
         self.current_state = list(states.values())[0]
         self.__current_frame = 0
-        self.x, self.y = 200, 983
+        self.x, self.y = 200, 800
 
     def next_frame(self):
         output = self.current_state.frames[self.__current_frame]
