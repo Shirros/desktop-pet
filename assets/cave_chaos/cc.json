@@ -1,178 +1,187 @@
-[
-    {
-        "state_name": "miner_sleeping",
-        "frames": 5,
-        "dims": [0, 0, 50, 50],
-        "file_name": "miner_sleeping.gif",
-        "transitions_to": [
-            {
-                "name": "miner_sleeping",
-                "probability": 0.9
-            },
-            {
-                "name": "miner_wakeup",
-                "probability": 0.1
-            }
-        ]
-    },
-    {
-        "state_name": "miner_wakeup",
-        "frames": 4,
-        "dims": [0, 0, 45, 50],
-        "file_name": "miner_wakeup.gif",
-        "transitions_to": [
-            {
-                "name": "miner_idle",
-                "probability": 0.995
-            },
-            {
-                "name": "miner_mutating",
-                "probability": 0.005
-            }
-        ]
-    },
-    {
-        "state_name": "miner_idle",
-        "frames": 7,
-        "dims": [0, 0, 45, 50],
-        "file_name": "miner_idle.gif",
-        "transitions_to": [
-            {
-                "name": "miner_idle",
-                "probability": 0.4
-            },
-            {
-                "name": "miner_walk",
-                "probability": 0.4
-            },
-            {
-                "name": "miner_irish",
-                "probability": 0.2
-            }
-        ]
-    },
-    {
-        "state_name": "miner_irish",
-        "frames": 18,
-        "dims": [0, 0, 45, 50],
-        "file_name": "miner_irish.gif",
-        "transitions_to": [
-            {
-                "name": "miner_irish",
-                "probability": 0.1
-            },
-            {
-                "name": "miner_flip",
-                "probability": 0.1
-            },
-            {
-                "name": "miner_tired",
-                "probability": 0.1
-            }
-        ]
-    },
-    {
-        "state_name": "miner_flip",
-        "frames": 10,
-        "dims": [-20, -20, 70, 70],
-        "file_name": "miner_flip.gif",
-        "transitions_to": [
-            {
-                "name": "miner_irish",
-                "probability": 1
-            }
-        ]
-    },
-    {
-        "state_name": "miner_tired",
-        "frames": 7,
-        "dims": [0, 0, 45, 50],
-        "file_name": "miner_idle.gif",
-        "transitions_to": [
-            {
-                "name": "miner_tired",
-                "probability": 0.8
-            },
-            {
-                "name": "miner_sleeping",
-                "probability": 0.2
-            }
-        ]
-    },
-
-    {
-        "state_name": "miner_walk",
-        "frames": 8,
-        "dims": [0, 0, 45, 50],
-        "move": [2, 0],
-        "file_name": "miner_walk.gif",
-        "transitions_to": [
-            {
-                "name": "miner_walk",
-                "probability": 0.7
-            },
-            {
-                "name": "miner_run",
-                "probability": 0.2
-            },
-            {
-                "name": "miner_tired",
-                "probability": 0.1
-            }
-        ]
-    },
-    {
-        "state_name": "miner_run",
-        "frames": 5,
-        "dims": [0, 0, 45, 50],
-        "move": [4, 0],
-        "file_name": "miner_run.gif",
-        "transitions_to": [
-            {
-                "name": "miner_walk",
-                "probability": 0.3
-            },
-            {
-                "name": "miner_run",
-                "probability": 0.7
-            }
-        ]
-    },
-
-    {
-        "state_name": "miner_mutating",
-        "frames": 37,
-        "dims": [-30, -23, 95, 73],
-        "file_name": "miner_mutating.gif",
-        "transitions_to": [
-            {
-                "name": "mutant_small_puke",
-                "probability": 1
-            }
-        ]
-    },
-    {
-        "state_name": "mutant_small_puke",
-        "frames": 20,
-        "dims": [-30, -5, 130, 55],
-        "file_name": "mutant_small_puke.gif",
-        "transitions_to": [
-            {
-                "name": "mutant_big_puke",
-                "probability": 1
-            }
-        ]
-    },
-    {
-        "state_name": "mutant_big_puke",
-        "frames": 12,
-        "dims": [-30, -5, 130, 55],
-        "file_name": "mutant_big_puke.gif",
-        "transitions_to": [
-            {
-                "name": "mutant_small_puke",
-                "probability": 1
-            }
-        ]
-    }
-]
+{
+    "events": [
+        {
+            "trigger": "click",
+            "type": "state_change",
+            "new_state": "miner_mutating"
+        }
+    ],
+    "states": [
+        {
+            "state_name": "miner_sleeping",
+            "frames": 5,
+            "dims": [0, 0, 50, 50],
+            "file_name": "miner_sleeping.gif",
+            "transitions_to": [
+                {
+                    "name": "miner_sleeping",
+                    "probability": 0.9
+                },
+                {
+                    "name": "miner_wakeup",
+                    "probability": 0.1
+                }
+            ]
+        },
+        {
+            "state_name": "miner_wakeup",
+            "frames": 4,
+            "dims": [0, 0, 45, 50],
+            "file_name": "miner_wakeup.gif",
+            "transitions_to": [
+                {
+                    "name": "miner_idle",
+                    "probability": 0.995
+                },
+                {
+                    "name": "miner_mutating",
+                    "probability": 0.005
+                }
+            ]
+        },
+        {
+            "state_name": "miner_idle",
+            "frames": 7,
+            "dims": [0, 0, 45, 50],
+            "file_name": "miner_idle.gif",
+            "transitions_to": [
+                {
+                    "name": "miner_idle",
+                    "probability": 0.4
+                },
+                {
+                    "name": "miner_walk",
+                    "probability": 0.4
+                },
+                {
+                    "name": "miner_irish",
+                    "probability": 0.2
+                }
+            ]
+        },
+        {
+            "state_name": "miner_irish",
+            "frames": 18,
+            "dims": [0, 0, 45, 50],
+            "file_name": "miner_irish.gif",
+            "transitions_to": [
+                {
+                    "name": "miner_irish",
+                    "probability": 0.1
+                },
+                {
+                    "name": "miner_flip",
+                    "probability": 0.1
+                },
+                {
+                    "name": "miner_tired",
+                    "probability": 0.1
+                }
+            ]
+        },
+        {
+            "state_name": "miner_flip",
+            "frames": 10,
+            "dims": [-20, -20, 70, 70],
+            "file_name": "miner_flip.gif",
+            "transitions_to": [
+                {
+                    "name": "miner_irish",
+                    "probability": 1
+                }
+            ]
+        },
+        {
+            "state_name": "miner_tired",
+            "frames": 7,
+            "dims": [0, 0, 45, 50],
+            "file_name": "miner_idle.gif",
+            "transitions_to": [
+                {
+                    "name": "miner_tired",
+                    "probability": 0.8
+                },
+                {
+                    "name": "miner_sleeping",
+                    "probability": 0.2
+                }
+            ]
+        },
+    
+        {
+            "state_name": "miner_walk",
+            "frames": 8,
+            "dims": [0, 0, 45, 50],
+            "move": [2, 0],
+            "file_name": "miner_walk.gif",
+            "transitions_to": [
+                {
+                    "name": "miner_walk",
+                    "probability": 0.7
+                },
+                {
+                    "name": "miner_run",
+                    "probability": 0.2
+                },
+                {
+                    "name": "miner_tired",
+                    "probability": 0.1
+                }
+            ]
+        },
+        {
+            "state_name": "miner_run",
+            "frames": 5,
+            "dims": [0, 0, 45, 50],
+            "move": [4, 0],
+            "file_name": "miner_run.gif",
+            "transitions_to": [
+                {
+                    "name": "miner_walk",
+                    "probability": 0.3
+                },
+                {
+                    "name": "miner_run",
+                    "probability": 0.7
+                }
+            ]
+        },
+    
+        {
+            "state_name": "miner_mutating",
+            "frames": 37,
+            "dims": [-30, -23, 95, 73],
+            "file_name": "miner_mutating.gif",
+            "transitions_to": [
+                {
+                    "name": "mutant_small_puke",
+                    "probability": 1
+                }
+            ]
+        },
+        {
+            "state_name": "mutant_small_puke",
+            "frames": 20,
+            "dims": [-30, -5, 130, 55],
+            "file_name": "mutant_small_puke.gif",
+            "transitions_to": [
+                {
+                    "name": "mutant_big_puke",
+                    "probability": 1
+                }
+            ]
+        },
+        {
+            "state_name": "mutant_big_puke",
+            "frames": 12,
+            "dims": [-30, -5, 130, 55],
+            "file_name": "mutant_big_puke.gif",
+            "transitions_to": [
+                {
+                    "name": "mutant_small_puke",
+                    "probability": 1
+                }
+            ]
+        }
+    ]
+}
