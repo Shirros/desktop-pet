@@ -6,7 +6,7 @@ Desktop pet using Python. Sprites in the assets folder are stolen from Nitrome. 
 
 ## How to use
 
-In main.py, there are two variables `JSON_URL` and `IMPATH`. `JSON_URL` is the file path to a JSON file describing your pet. In the JSON file, there are references to image files. All those image files are relative to `IMPATH`.
+In main.py, there is a variable `CONFIG_URL`. This is a file path to a folder containing `config.json`, and all file paths in `config.json` are relative to `CONFIG_URL`. `config.json` defines the pet and has all the file paths to the gifs used to display it.
 
 ## How to get sprites from Nitrome (or any Flash game)
 

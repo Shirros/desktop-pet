@@ -1,9 +1,10 @@
 import tkinter as tk
 import json
 from pet import Pet, PetState
+from os.path import join
 
-JSON_URL = "assets\\bonzi\\bonzi.json"
-IMPATH = "assets\\bonzi\\"
+#CONFIG_PATH = "assets\\bonzi\\"
+CONFIG_PATH = "assets\\cave_chaos\\"
 
 def create_event_func(event, pet):
     if event["type"] == "state_change":
@@ -23,9 +24,9 @@ def update():
 if __name__ == "__main__":
     window = tk.Tk()
 
-    with open(JSON_URL) as config:
+    with open(join(CONFIG_PATH, "config.json")) as config:
         config_obj = json.load(config)
-        states = {state['state_name']: PetState(state, IMPATH) for state in config_obj["states"]}
+        states = {state['state_name']: PetState(state, CONFIG_PATH) for state in config_obj["states"]}
         # Validate
         for state in states.values():
             for state in state.next_states.names:
