@@ -4,6 +4,10 @@
 
 Desktop pet using Python. Sprites in the assets folder are stolen from Nitrome. This project is based off of [this Medium post](https://medium.com/analytics-vidhya/create-your-own-desktop-pet-with-python-5b369be18868) but the code in that post is highly inflexible and a lot of things are hard coded. My project allows the easy modification of the Pet using a JSON file.
 
+## How to use
+
+In main.py, there are two variables `JSON_URL` and `IMPATH`. `JSON_URL` is the file path to a JSON file describing your pet. In the JSON file, there are references to image files. All those image files are relative to `IMPATH`.
+
 ## How to get sprites from Nitrome (or any Flash game)
 
 Get an SWF file from here:
@@ -13,9 +17,9 @@ Then decompile it using this tool
 https://github.com/jindrapetrik/jpexs-decompiler
 and extract all the image files. You can create gifs using ezgif or something.
 
-## How to use this app
+## How to create your own pets
 
-Basically, the pet is a finite state machine. The states and transitions are defined in the JSON file.
+Basically, pets are finite state machines. The states and transitions are defined in the JSON file.
 
 ![FSM Diagram](fsm.jpg)
 
