@@ -10,7 +10,13 @@ My project has:
 
 ## How to use
 
-In main.py, there is a variable `CONFIG_URL`. This is a file path to a folder containing `config.json`, and all file paths in `config.json` are relative to `CONFIG_URL`. `config.json` defines the pet and has all the file paths to the gifs used to display it.
+Create a folder with a JSON file named `config.json` describing the pet, and all the gifs for your pet. The specifics of this JSON file are explained later. You can simply take one of the example configs I made in the `/assets/` folder in this repo. 
+
+Clone this repo and run main.py OR download my totally safe exe (windows) or zip file (which macOS uses apparently?)
+
+Run it like this: `python main.py /path/to/your/config/` or `& '.\desktop-pet.exe' /path/to/your/config/folder/`
+
+You can't close this program. That's not implemented yet. Just restart your PC or terminate the program in task manager. Sorry :)
 
 ## How to get sprites from Nitrome (or any Flash game)
 
