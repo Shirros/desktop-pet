@@ -1,5 +1,5 @@
-__pychache__
-.vscode
+.vscode/
 .env
-build
-dist
+build/
+dist/
+__pycache__/
