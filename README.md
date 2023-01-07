@@ -10,11 +10,21 @@ My project has:
 
 ## How to use
 
+### Creating a pet config
+
 Create a folder with a JSON file named `config.json` describing the pet, and all the gifs for your pet. The specifics of this JSON file are explained later. You can simply take one of the example configs I made in the `/assets/` folder in this repo. 
+
+### Running the program
 
 Clone this repo and run main.py OR download my totally safe exe (windows) or zip file (which macOS uses apparently?)
 
-Run it like this: `python main.py /path/to/your/config/` or `& '.\desktop-pet.exe' /path/to/your/config/folder/`
+Run it like this: `python main.py /path/to/your/config/folder/` or `& '.\desktop-pet.exe' C:\path\to\your\config\folder\`
+
+Suppose I downloaded the EXE and the `cave_chaos` folder from this repo. I put the `cave_chaos` folder in the same directory as the EXE. I can run it like this:
+
+`& '.\desktop-pet.exe' cave_chaos\`
+
+### How to close
 
 You can't close this program. That's not implemented yet. Just restart your PC or terminate the program in task manager. Sorry :)
 
@@ -57,5 +67,3 @@ This is an example of a state definition.
 "frames" is the number of frames in the gif.
 "dims" is x offset, y offset, and the width and height of the gif. (if x offset is X, it will shift the image X relative to the pet's real position).
 "move" means that each frame, the pet will move x, y pixels (this is useful for walking states).
-
-I recommend you make your own gifs because my gifs are a little janky. Your gifs should all be the same resolution or else you will get weird visual artifacts.
