@@ -1,12 +1,24 @@
 from util import WeightedRandomMap, openai_query, speak
 from tkinter import simpledialog
 import tkinter as tk
+from os.path import join
+
+def read_frames(impath):
+        output = []
+        i = 0
+        while True:
+            try:
+                new_frame = tk.PhotoImage(file=join(impath),format=f'gif -index {i}')
+                output.append(new_frame)
+            except:
+                break
+            i += 1
+        return output
 
 class PetState:
     def __init__(self, json_obj, impath):
         self.name = json_obj['state_name']
-        self.frames = [tk.PhotoImage(file=impath + json_obj['file_name'],
-                                     format=f'gif -index {i}') for i in range(json_obj['frames'])]
+        self.frames = read_frames(join(impath, json_obj['file_name']))
         self.ox, self.oy, self.w, self.h = json_obj['dims']
         if 'move' in json_obj:
             self.dx, self.dy = json_obj['move']

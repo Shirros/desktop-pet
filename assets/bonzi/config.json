@@ -12,7 +12,6 @@
     "states": [
         {
             "state_name": "swing_in",
-            "frames": 25,
             "dims": [0, 0, 200, 160],
             "file_name": "swing_in.gif",
             "transitions_to": [
@@ -25,7 +24,6 @@
     
         {
             "state_name": "idle",
-            "frames": 6,
             "dims": [0, 0, 200, 160],
             "file_name": "idle.gif",
             "transitions_to": [
@@ -54,7 +52,6 @@
     
         {
             "state_name": "blow_kiss",
-            "frames": 17,
             "dims": [0, 0, 200, 160],
             "file_name": "blow_kiss.gif",
             "transitions_to": [
@@ -66,7 +63,6 @@
         },
         {
             "state_name": "wave",
-            "frames": 23,
             "dims": [0, 0, 200, 160],
             "file_name": "wave.gif",
             "transitions_to": [
@@ -78,7 +74,6 @@
         },
         {
             "state_name": "flip",
-            "frames": 14,
             "dims": [0, 0, 200, 160],
             "file_name": "flip.gif",
             "transitions_to": [
@@ -90,7 +85,6 @@
         },
         {
             "state_name": "eat_banana",
-            "frames": 14,
             "dims": [0, 0, 200, 160],
             "file_name": "eat_banana.gif",
             "transitions_to": [
@@ -102,7 +96,6 @@
         },
         {
             "state_name": "banana_miss",
-            "frames": 14,
             "dims": [0, 0, 200, 160],
             "file_name": "banana_miss.gif",
             "transitions_to": [
@@ -115,7 +108,6 @@
     
         {
             "state_name": "sit_down",
-            "frames": 15,
             "dims": [0, 0, 200, 160],
             "file_name": "sit_down.gif",
             "transitions_to": [
@@ -127,7 +119,6 @@
         },
         {
             "state_name": "sit_up",
-            "frames": 13,
             "dims": [0, 0, 200, 160],
             "file_name": "sit_up.gif",
             "transitions_to": [
@@ -140,7 +131,6 @@
 
         {
             "state_name": "begin_listening",
-            "frames": 7,
             "dims": [0, 0, 200, 160],
             "file_name": "begin_listening.gif",
             "transitions_to": [
@@ -152,7 +142,6 @@
         },
         {
             "state_name": "listening",
-            "frames": 1,
             "dims": [0, 0, 200, 160],
             "file_name": "listening.gif",
             "transitions_to": [
@@ -165,7 +154,6 @@
 
         {
             "state_name": "begin_talking",
-            "frames": 5,
             "dims": [0, 0, 200, 160],
             "file_name": "begin_talking.gif",
             "transitions_to": [
@@ -177,7 +165,6 @@
         },
         {
             "state_name": "talking",
-            "frames": 6,
             "dims": [0, 0, 200, 160],
             "file_name": "talking.gif",
             "transitions_to": [
