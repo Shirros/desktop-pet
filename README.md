@@ -2,7 +2,11 @@
 
 ![demo](click.gif)
 
-Desktop pet using Python. Sprites in the assets folder are stolen from Nitrome. This project is based off of [this Medium post](https://medium.com/analytics-vidhya/create-your-own-desktop-pet-with-python-5b369be18868) but the code in that post is highly inflexible and a lot of things are hard coded. My project allows the easy modification of the Pet using a JSON file.
+Desktop pet using Python. Sprites in the assets folder are stolen from Nitrome. This project is based off of [this Medium post](https://medium.com/analytics-vidhya/create-your-own-desktop-pet-with-python-5b369be18868) but the code in that post is highly inflexible and a lot of things are hard coded.
+
+My project has:
+* Easy modification using JSON files
+* OpenAI GPT support to turn your little friend into a helper that can answer your questions
 
 ## How to use
 
