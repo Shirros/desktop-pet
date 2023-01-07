@@ -1,2 +1,5 @@
-
+__pychache__
+.vscode
 .env
+build
+dist
